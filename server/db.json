@@ -1,0 +1,34 @@
+{
+  "user": [
+    {
+      "email": "rex@gmail.com",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "email": "milton@gmail.com",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "email": "rexmilton@gmail.com",
+      "password": "1234",
+      "id": 3
+    },
+    {
+      "email": "a@gmail.com",
+      "password": "1234",
+      "id": 4
+    },
+    {
+      "email": "a@gmail.com",
+      "password": "1234",
+      "id": 5
+    },
+    {
+      "email": "a@gmail.com",
+      "password": "1234",
+      "id": 6
+    }
+  ]
+}
