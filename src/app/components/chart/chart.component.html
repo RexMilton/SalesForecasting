@@ -1,0 +1,31 @@
+<html>
+<body>
+    <mat-toolbar>
+        <span>Digiverz Project</span>
+        <span class="example-spacer"></span>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" (click)="signoutfromchart()">
+          <mat-icon>exit_to_app</mat-icon>
+        </button>
+      </mat-toolbar>
+    <h1>Graphical Representation</h1>
+    <div class="main">
+        <div class="buttons">
+            <button (click)="getcomment()"> Metrics </button>
+            <button (click)="getdata()"> GET </button>
+        </div>
+        <div class="display">
+            <div class="chardiv" [hidden]="!showchart">
+                <canvas id="myChart" width="200" height="200"></canvas>
+            </div>
+            <div class="commentdiv" [hidden]="!showcomment">
+                <ul *ngFor="let list of commentlist">
+                    <ul *ngFor="let i of list | keyvalue">
+                        <li> <b>{{i.key}}</b> -> {{i.value}}</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
